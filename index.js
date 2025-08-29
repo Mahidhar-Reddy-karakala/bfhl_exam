@@ -72,7 +72,7 @@ app.post("/bfhl", (req, res) => {
     res.status(500).json({ is_success: false, message: err.message });
   }
 });
-
+module.exports = app; 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
